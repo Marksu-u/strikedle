@@ -1,0 +1,12 @@
+# Generated from app/data/cs2/players.json by `npm run generate`.
+#
+# Prettier and JSON.stringify disagree about short arrays — Prettier collapses
+# ["AWP"] onto one line, the generator always expands. Left to fight, the two
+# rewrite each other forever and scripts/generate.test.ts can never pass. The
+# generator wins, because nobody edits these by hand.
+app/data/cs2/guessr_players.json
+app/data/cs2/more-or-lessr.json
+app/data/cs2/wordle.json
+
+# The raw HLTV scrape: an input artefact, kept exactly as it arrived.
+app/data/cs2/hltv_raw.json
