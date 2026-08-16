@@ -1,0 +1,2288 @@
+{
+  "game": "guessr",
+  "players": [
+    {
+      "name": "Aleksib",
+      "nationality": "Finland",
+      "current_team": "Natus Vincere",
+      "previous_teams": [
+        "ENCE",
+        "G2",
+        "OG"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 29,
+      "majors": 1,
+      "tournaments_won": 8,
+      "achievements": [
+        "Major Winner (PGL CS2 Major Copenhagen 2024)",
+        "8 tournament wins"
+      ]
+    },
+    {
+      "name": "allu",
+      "nationality": "Finland",
+      "current_team": "ENCE",
+      "previous_teams": [
+        "Ninjas in Pyjamas",
+        "FaZe"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 34,
+      "majors": 0,
+      "tournaments_won": 3,
+      "achievements": [
+        "HLTV Top 19 (2015)",
+        "3 tournament wins"
+      ]
+    },
+    {
+      "name": "apEX",
+      "nationality": "France",
+      "current_team": "Vitality",
+      "previous_teams": [
+        "G2",
+        "Envy",
+        "Team LDLC"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 33,
+      "majors": 4,
+      "tournaments_won": 39,
+      "achievements": [
+        "4x Major Winner",
+        "HLTV Top 15 (2014)",
+        "39 tournament wins"
+      ]
+    },
+    {
+      "name": "arT",
+      "nationality": "Brazil",
+      "current_team": "Legacy",
+      "previous_teams": [],
+      "role": [
+        "Entry",
+        "IGL"
+      ],
+      "age": 30,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "autimatic",
+      "nationality": "United States",
+      "current_team": "No team",
+      "previous_teams": [
+        "Cloud9",
+        "Gen.G",
+        "Liquid"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 29,
+      "majors": 1,
+      "tournaments_won": 5,
+      "achievements": [
+        "Major Winner (ELEAGUE Major 2018)",
+        "HLTV Top 17 (2018)",
+        "1x event MVP",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "Ax1Le",
+      "nationality": "Russia",
+      "current_team": "1win",
+      "previous_teams": [
+        "Gambit"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 24,
+      "majors": 0,
+      "tournaments_won": 8,
+      "achievements": [
+        "HLTV Top 4 (2022)",
+        "3x event MVP",
+        "8 tournament wins"
+      ]
+    },
+    {
+      "name": "b1t",
+      "nationality": "Ukraine",
+      "current_team": "Natus Vincere",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 23,
+      "majors": 2,
+      "tournaments_won": 14,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 9 (2021, 2024)",
+        "1x event MVP",
+        "14 tournament wins"
+      ]
+    },
+    {
+      "name": "blameF",
+      "nationality": "Denmark",
+      "current_team": "BIG",
+      "previous_teams": [
+        "Complexity",
+        "Heroic"
+      ],
+      "role": [
+        "Rifler",
+        "IGL"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "HLTV Top 6 (2020)",
+        "1x event MVP",
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "BnTeT",
+      "nationality": "Indonesia",
+      "current_team": "Alter Ego",
+      "previous_teams": [
+        "TYLOO",
+        "Gen.G"
+      ],
+      "role": [
+        "Rifler",
+        "IGL"
+      ],
+      "age": 30,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "Boombl4",
+      "nationality": "Russia",
+      "current_team": "BetBoom",
+      "previous_teams": [
+        "Natus Vincere",
+        "Cloud9"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 27,
+      "majors": 1,
+      "tournaments_won": 9,
+      "achievements": [
+        "Major Winner (PGL Major Stockholm 2021)",
+        "9 tournament wins"
+      ]
+    },
+    {
+      "name": "broky",
+      "nationality": "Latvia",
+      "current_team": "FaZe",
+      "previous_teams": [
+        "fnatic"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 25,
+      "majors": 1,
+      "tournaments_won": 11,
+      "achievements": [
+        "Major Winner (PGL Major Antwerp 2022)",
+        "HLTV Top 6 (2022)",
+        "3x event MVP",
+        "11 tournament wins"
+      ]
+    },
+    {
+      "name": "Brollan",
+      "nationality": "Sweden",
+      "current_team": "Heroic",
+      "previous_teams": [
+        "fnatic",
+        "MOUZ"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 24,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "HLTV Top 15 (2020)",
+        "1x event MVP",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "byali",
+      "nationality": "Poland",
+      "current_team": "No team",
+      "previous_teams": [
+        "Virtus.pro"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 32,
+      "majors": 1,
+      "tournaments_won": 12,
+      "achievements": [
+        "Major Winner (EMS One Katowice 2014)",
+        "HLTV Top 13 (2014)",
+        "12 tournament wins"
+      ]
+    },
+    {
+      "name": "cadiaN",
+      "nationality": "Denmark",
+      "current_team": "OG",
+      "previous_teams": [
+        "Heroic",
+        "North",
+        "Liquid"
+      ],
+      "role": [
+        "AWP",
+        "IGL"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 6,
+      "achievements": [
+        "HLTV Top 18 (2023)",
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "chelo",
+      "nationality": "Brazil",
+      "current_team": "Imperial",
+      "previous_teams": [
+        "FURIA",
+        "Sharks"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 28,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "chopper",
+      "nationality": "Russia",
+      "current_team": "Spirit",
+      "previous_teams": [
+        "forZe"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 29,
+      "majors": 1,
+      "tournaments_won": 9,
+      "achievements": [
+        "Major Winner (Perfect World Shanghai Major 2024)",
+        "9 tournament wins"
+      ]
+    },
+    {
+      "name": "coldzera",
+      "nationality": "Brazil",
+      "current_team": "No team",
+      "previous_teams": [
+        "FaZe",
+        "MIBR",
+        "Luminosity"
+      ],
+      "role": [
+        "Lurker"
+      ],
+      "age": 31,
+      "majors": 2,
+      "tournaments_won": 15,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 1 (2016, 2017)",
+        "8x event MVP",
+        "15 tournament wins"
+      ]
+    },
+    {
+      "name": "device",
+      "nationality": "Denmark",
+      "current_team": "100 Thieves",
+      "previous_teams": [
+        "NIP",
+        "Dignitas"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 30,
+      "majors": 4,
+      "tournaments_won": 29,
+      "achievements": [
+        "4x Major Winner",
+        "HLTV Top 2 (2018)",
+        "19x event MVP",
+        "29 tournament wins"
+      ]
+    },
+    {
+      "name": "donk",
+      "nationality": "Russia",
+      "current_team": "Spirit",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 19,
+      "majors": 1,
+      "tournaments_won": 10,
+      "achievements": [
+        "Major Winner (Perfect World Shanghai Major 2024)",
+        "HLTV Top 1 (2024)",
+        "11x event MVP",
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "draken",
+      "nationality": "Sweden",
+      "current_team": "Johnny Speeds",
+      "previous_teams": [
+        "Ninjas in Pyjamas",
+        "Red Reserve"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 30,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "dupreeh",
+      "nationality": "Denmark",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Vitality",
+        "Heroic"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 33,
+      "majors": 5,
+      "tournaments_won": 31,
+      "achievements": [
+        "5x Major Winner",
+        "HLTV Top 5 (2018)",
+        "2x event MVP",
+        "31 tournament wins"
+      ]
+    },
+    {
+      "name": "electroNic",
+      "nationality": "Russia",
+      "current_team": "BC.Game",
+      "previous_teams": [
+        "NAVI"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 27,
+      "majors": 1,
+      "tournaments_won": 16,
+      "achievements": [
+        "Major Winner (PGL Major Stockholm 2021)",
+        "HLTV Top 4 (2018)",
+        "1x event MVP",
+        "16 tournament wins"
+      ]
+    },
+    {
+      "name": "EliGE",
+      "nationality": "United States",
+      "current_team": "Liquid",
+      "previous_teams": [
+        "Complexity"
+      ],
+      "role": [
+        "Rifler",
+        "Entry"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 10,
+      "achievements": [
+        "HLTV Top 4 (2019)",
+        "4x event MVP",
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "f0rest",
+      "nationality": "Sweden",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Ninjas in Pyjamas",
+        "Dignitas",
+        "fnatic"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 38,
+      "majors": 1,
+      "tournaments_won": 23,
+      "achievements": [
+        "Major Winner (ESL One Cologne 2014)",
+        "HLTV Top 2 (2013)",
+        "8x event MVP",
+        "23 tournament wins"
+      ]
+    },
+    {
+      "name": "FalleN",
+      "nationality": "Brazil",
+      "current_team": "FURIA",
+      "previous_teams": [
+        "Liquid",
+        "MIBR",
+        "Luminosity"
+      ],
+      "role": [
+        "AWP",
+        "IGL"
+      ],
+      "age": 35,
+      "majors": 2,
+      "tournaments_won": 18,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 2 (2016)",
+        "4x event MVP",
+        "18 tournament wins"
+      ]
+    },
+    {
+      "name": "felps",
+      "nationality": "Brazil",
+      "current_team": "No team",
+      "previous_teams": [
+        "SK Gaming",
+        "MIBR",
+        "FURIA"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 7,
+      "achievements": [
+        "1x event MVP",
+        "7 tournament wins"
+      ]
+    },
+    {
+      "name": "fer",
+      "nationality": "Brazil",
+      "current_team": "No team",
+      "previous_teams": [
+        "SK Gaming",
+        "Luminosity",
+        "MIBR"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 34,
+      "majors": 2,
+      "tournaments_won": 13,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 3 (2017)",
+        "1x event MVP",
+        "13 tournament wins"
+      ]
+    },
+    {
+      "name": "flameZ",
+      "nationality": "Israel",
+      "current_team": "Vitality",
+      "previous_teams": [
+        "OG",
+        "Endpoint"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 23,
+      "majors": 2,
+      "tournaments_won": 19,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 7 (2024, 2025)",
+        "19 tournament wins"
+      ]
+    },
+    {
+      "name": "flamie",
+      "nationality": "Russia",
+      "current_team": "No team",
+      "previous_teams": [
+        "Natus Vincere"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 15,
+      "achievements": [
+        "HLTV Top 12 (2016)",
+        "2x event MVP",
+        "15 tournament wins"
+      ]
+    },
+    {
+      "name": "floppy",
+      "nationality": "United States",
+      "current_team": "No team",
+      "previous_teams": [
+        "Gen.G",
+        "Cloud9"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 26,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $184,559"
+      ]
+    },
+    {
+      "name": "flusha",
+      "nationality": "Sweden",
+      "current_team": "Retired",
+      "previous_teams": [
+        "fnatic",
+        "GODSENT",
+        "Cloud9"
+      ],
+      "role": [
+        "Rifler",
+        "Lurker"
+      ],
+      "age": 33,
+      "majors": 3,
+      "tournaments_won": 23,
+      "achievements": [
+        "3x Major Winner",
+        "HLTV Top 2 (2014)",
+        "4x event MVP",
+        "23 tournament wins"
+      ]
+    },
+    {
+      "name": "frozen",
+      "nationality": "Slovakia",
+      "current_team": "FaZe",
+      "previous_teams": [
+        "MOUZ"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 24,
+      "majors": 0,
+      "tournaments_won": 8,
+      "achievements": [
+        "HLTV Top 8 (2025)",
+        "1x event MVP",
+        "8 tournament wins"
+      ]
+    },
+    {
+      "name": "GeT_RiGhT",
+      "nationality": "Sweden",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Ninjas in Pyjamas",
+        "Dignitas"
+      ],
+      "role": [
+        "Lurker"
+      ],
+      "age": 36,
+      "majors": 1,
+      "tournaments_won": 23,
+      "achievements": [
+        "Major Winner (ESL One Cologne 2014)",
+        "HLTV Top 1 (2013, 2014)",
+        "10x event MVP",
+        "23 tournament wins"
+      ]
+    },
+    {
+      "name": "gla1ve",
+      "nationality": "Denmark",
+      "current_team": "100 Thieves",
+      "previous_teams": [
+        "Astralis",
+        "Heroic",
+        "Team SoloMid"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 31,
+      "majors": 4,
+      "tournaments_won": 23,
+      "achievements": [
+        "4x Major Winner",
+        "HLTV Top 8 (2018)",
+        "1x event MVP",
+        "23 tournament wins"
+      ]
+    },
+    {
+      "name": "Grim",
+      "nationality": "United States",
+      "current_team": "NRG",
+      "previous_teams": [
+        "Liquid",
+        "Triumph"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 25,
+      "majors": 0,
+      "tournaments_won": 4,
+      "achievements": [
+        "4 tournament wins"
+      ]
+    },
+    {
+      "name": "GuardiaN",
+      "nationality": "Slovakia",
+      "current_team": "Retired",
+      "previous_teams": [
+        "NAVI",
+        "FaZe"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 35,
+      "majors": 0,
+      "tournaments_won": 17,
+      "achievements": [
+        "HLTV Top 2 (2015)",
+        "8x event MVP",
+        "17 tournament wins"
+      ]
+    },
+    {
+      "name": "hampus",
+      "nationality": "Sweden",
+      "current_team": "Johnny Speeds",
+      "previous_teams": [
+        "Red Reserve",
+        "Fnatic Academy"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 27,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "Happy",
+      "nationality": "France",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Team EnVyUs",
+        "Team LDLC"
+      ],
+      "role": [
+        "AWP",
+        "IGL"
+      ],
+      "age": 34,
+      "majors": 2,
+      "tournaments_won": 13,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 8 (2015)",
+        "4x event MVP",
+        "13 tournament wins"
+      ]
+    },
+    {
+      "name": "HEN1",
+      "nationality": "Brazil",
+      "current_team": "Gaimin Gladiators",
+      "previous_teams": [
+        "Immortals",
+        "MIBR",
+        "Imperial"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "HLTV Top 16 (2020)",
+        "1x event MVP",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "HObbit",
+      "nationality": "Kazakhstan",
+      "current_team": "No team",
+      "previous_teams": [
+        "Gambit",
+        "Cloud9",
+        "Spirit"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 32,
+      "majors": 1,
+      "tournaments_won": 11,
+      "achievements": [
+        "Major Winner (PGL Major Krakow 2017)",
+        "HLTV Top 6 (2021)",
+        "3x event MVP",
+        "11 tournament wins"
+      ]
+    },
+    {
+      "name": "HooXi",
+      "nationality": "Denmark",
+      "current_team": "Astralis",
+      "previous_teams": [
+        "G2",
+        "Copenhagen Flames"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 3,
+      "achievements": [
+        "3 tournament wins"
+      ]
+    },
+    {
+      "name": "huNter-",
+      "nationality": "Bosnia and Herzegovina",
+      "current_team": "G2",
+      "previous_teams": [
+        "CR4ZY"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 30,
+      "majors": 0,
+      "tournaments_won": 7,
+      "achievements": [
+        "HLTV Top 12 (2021)",
+        "2x event MVP",
+        "7 tournament wins"
+      ]
+    },
+    {
+      "name": "iM",
+      "nationality": "Romania",
+      "current_team": "Natus Vincere",
+      "previous_teams": [
+        "GamerLegion",
+        "Nexus"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 27,
+      "majors": 1,
+      "tournaments_won": 6,
+      "achievements": [
+        "Major Winner (PGL CS2 Major Copenhagen 2024)",
+        "HLTV Top 16 (2024)",
+        "1x event MVP",
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "jabbi",
+      "nationality": "Denmark",
+      "current_team": "Astralis",
+      "previous_teams": [
+        "Heroic",
+        "Sprout"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 23,
+      "majors": 0,
+      "tournaments_won": 2,
+      "achievements": [
+        "HLTV Top 15 (2023)",
+        "1x event MVP",
+        "2 tournament wins"
+      ]
+    },
+    {
+      "name": "Jame",
+      "nationality": "Russia",
+      "current_team": "PARIVISION",
+      "previous_teams": [
+        "Outsiders"
+      ],
+      "role": [
+        "AWP",
+        "IGL"
+      ],
+      "age": 27,
+      "majors": 1,
+      "tournaments_won": 6,
+      "achievements": [
+        "Major Winner (IEM Rio Major 2022)",
+        "HLTV Top 10 (2021)",
+        "3x event MVP",
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "JamYoung",
+      "nationality": "China",
+      "current_team": "TYLOO",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 25,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1x event MVP",
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "Jimpphat",
+      "nationality": "Finland",
+      "current_team": "Aurora",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 19,
+      "majors": 0,
+      "tournaments_won": 4,
+      "achievements": [
+        "HLTV Top 17 (2024)",
+        "4 tournament wins"
+      ]
+    },
+    {
+      "name": "jks",
+      "nationality": "Australia",
+      "current_team": "FlyQuest",
+      "previous_teams": [
+        "Complexity",
+        "100 Thieves",
+        "Renegades"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 30,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "HLTV Top 15 (2019)",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "jL",
+      "nationality": "Lithuania",
+      "current_team": "No team",
+      "previous_teams": [
+        "Apeks"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 26,
+      "majors": 1,
+      "tournaments_won": 4,
+      "achievements": [
+        "Major Winner (PGL CS2 Major Copenhagen 2024)",
+        "HLTV Top 5 (2024)",
+        "2x event MVP",
+        "4 tournament wins"
+      ]
+    },
+    {
+      "name": "JT",
+      "nationality": "South Africa",
+      "current_team": "Liquid",
+      "previous_teams": [
+        "Bravado",
+        "Extra Salt"
+      ],
+      "role": [
+        "Rifler",
+        "IGL"
+      ],
+      "age": 27,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $286,779"
+      ]
+    },
+    {
+      "name": "JW",
+      "nationality": "Sweden",
+      "current_team": "EYEBALLERS",
+      "previous_teams": [
+        "fnatic",
+        "GODSENT",
+        "Ninjas in Pyjamas"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 31,
+      "majors": 3,
+      "tournaments_won": 24,
+      "achievements": [
+        "3x Major Winner",
+        "HLTV Top 5 (2014)",
+        "3x event MVP",
+        "24 tournament wins"
+      ]
+    },
+    {
+      "name": "k0nfig",
+      "nationality": "Denmark",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Astralis",
+        "Complexity",
+        "North",
+        "OpTic"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 3,
+      "achievements": [
+        "HLTV Top 14 (2017)",
+        "2x event MVP",
+        "3 tournament wins"
+      ]
+    },
+    {
+      "name": "karrigan",
+      "nationality": "Denmark",
+      "current_team": "Falcons",
+      "previous_teams": [
+        "Astralis",
+        "mousesports",
+        "Team SoloMid"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 36,
+      "majors": 2,
+      "tournaments_won": 26,
+      "achievements": [
+        "2x Major Winner",
+        "1x event MVP",
+        "26 tournament wins"
+      ]
+    },
+    {
+      "name": "kaze",
+      "nationality": "Malaysia",
+      "current_team": "No team",
+      "previous_teams": [
+        "Rare Atom",
+        "MVP.karnal"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 32,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $119,273"
+      ]
+    },
+    {
+      "name": "kennyS",
+      "nationality": "France",
+      "current_team": "Retired",
+      "previous_teams": [
+        "G2",
+        "Team EnVyUs",
+        "Titan"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 31,
+      "majors": 1,
+      "tournaments_won": 11,
+      "achievements": [
+        "Major Winner (DreamHack Open Cluj-Napoca 2015)",
+        "HLTV Top 6 (2014, 2015)",
+        "10x event MVP",
+        "11 tournament wins"
+      ]
+    },
+    {
+      "name": "Kjaerbye",
+      "nationality": "Denmark",
+      "current_team": "No team",
+      "previous_teams": [
+        "Astralis",
+        "North",
+        "Vitality"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 28,
+      "majors": 1,
+      "tournaments_won": 7,
+      "achievements": [
+        "Major Winner (ELEAGUE Major 2017)",
+        "HLTV Top 15 (2017)",
+        "1x event MVP",
+        "7 tournament wins"
+      ]
+    },
+    {
+      "name": "KRIMZ",
+      "nationality": "Sweden",
+      "current_team": "EYEBALLERS",
+      "previous_teams": [
+        "GODSENT",
+        "LGB eSports"
+      ],
+      "role": [
+        "Rifler",
+        "Support"
+      ],
+      "age": 32,
+      "majors": 2,
+      "tournaments_won": 22,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 7 (2015)",
+        "5x event MVP",
+        "22 tournament wins"
+      ]
+    },
+    {
+      "name": "KSCERATO",
+      "nationality": "Brazil",
+      "current_team": "FURIA",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 26,
+      "majors": 0,
+      "tournaments_won": 8,
+      "achievements": [
+        "HLTV Top 9 (2022, 2025)",
+        "1x event MVP",
+        "8 tournament wins"
+      ]
+    },
+    {
+      "name": "Liazz",
+      "nationality": "Australia",
+      "current_team": "THUNDER dOWNUNDER",
+      "previous_teams": [
+        "Renegades",
+        "100 Thieves",
+        "Grayhound"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 28,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $193,906"
+      ]
+    },
+    {
+      "name": "m0NESY",
+      "nationality": "Russia",
+      "current_team": "Falcons",
+      "previous_teams": [
+        "G2",
+        "NAVI Junior"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 21,
+      "majors": 1,
+      "tournaments_won": 7,
+      "achievements": [
+        "Major Winner (IEM Cologne Major 2026)",
+        "HLTV Top 2 (2024)",
+        "7x event MVP",
+        "7 tournament wins"
+      ]
+    },
+    {
+      "name": "Magisk",
+      "nationality": "Denmark",
+      "current_team": "BC.Game",
+      "previous_teams": [
+        "Astralis",
+        "Vitality",
+        "OpTic"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 28,
+      "majors": 4,
+      "tournaments_won": 26,
+      "achievements": [
+        "4x Major Winner",
+        "HLTV Top 5 (2019)",
+        "2x event MVP",
+        "26 tournament wins"
+      ]
+    },
+    {
+      "name": "magixx",
+      "nationality": "Russia",
+      "current_team": "Spirit",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 23,
+      "majors": 1,
+      "tournaments_won": 10,
+      "achievements": [
+        "Major Winner (Perfect World Shanghai Major 2024)",
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "MAJ3R",
+      "nationality": "Türkiye",
+      "current_team": "Aurora",
+      "previous_teams": [
+        "Space Soldiers"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 35,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "mantuu",
+      "nationality": "Poland",
+      "current_team": "No team",
+      "previous_teams": [
+        "Windigo"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $236,805"
+      ]
+    },
+    {
+      "name": "mezii",
+      "nationality": "United Kingdom",
+      "current_team": "Vitality",
+      "previous_teams": [
+        "fnatic",
+        "Cloud9"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 27,
+      "majors": 2,
+      "tournaments_won": 17,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 12 (2025)",
+        "17 tournament wins"
+      ]
+    },
+    {
+      "name": "NAF",
+      "nationality": "Canada",
+      "current_team": "Liquid",
+      "previous_teams": [
+        "Renegades",
+        "OpTic"
+      ],
+      "role": [
+        "Rifler",
+        "Support"
+      ],
+      "age": 28,
+      "majors": 0,
+      "tournaments_won": 12,
+      "achievements": [
+        "HLTV Top 6 (2018)",
+        "5x event MVP",
+        "12 tournament wins"
+      ]
+    },
+    {
+      "name": "NBK-",
+      "nationality": "France",
+      "current_team": "No team",
+      "previous_teams": [
+        "Vitality",
+        "G2",
+        "Team EnVyUs"
+      ],
+      "role": [
+        "Support",
+        "IGL"
+      ],
+      "age": 32,
+      "majors": 2,
+      "tournaments_won": 22,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 5 (2013)",
+        "4x event MVP",
+        "22 tournament wins"
+      ]
+    },
+    {
+      "name": "NEO",
+      "nationality": "Poland",
+      "current_team": "Astralis",
+      "previous_teams": [
+        "Virtus.pro",
+        "FaZe",
+        "HONORIS"
+      ],
+      "role": [
+        "Rifler",
+        "IGL"
+      ],
+      "age": 39,
+      "majors": 1,
+      "tournaments_won": 16,
+      "achievements": [
+        "Major Winner (EMS One Katowice 2014)",
+        "HLTV Top 17 (2015)",
+        "2x event MVP",
+        "16 tournament wins"
+      ]
+    },
+    {
+      "name": "nexa",
+      "nationality": "Serbia",
+      "current_team": "No team",
+      "previous_teams": [
+        "G2",
+        "OG",
+        "Copenhagen Flames"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 2,
+      "achievements": [
+        "2 tournament wins"
+      ]
+    },
+    {
+      "name": "NiKo",
+      "nationality": "Bosnia and Herzegovina",
+      "current_team": "Falcons",
+      "previous_teams": [
+        "G2",
+        "FaZe",
+        "MOUZ"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 29,
+      "majors": 1,
+      "tournaments_won": 19,
+      "achievements": [
+        "Major Winner (IEM Cologne Major 2026)",
+        "HLTV Top 2 (2017, 2023)",
+        "10x event MVP",
+        "19 tournament wins"
+      ]
+    },
+    {
+      "name": "nitr0",
+      "nationality": "United States",
+      "current_team": "NRG",
+      "previous_teams": [
+        "Liquid",
+        "Complexity"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 10,
+      "achievements": [
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "olofmeister",
+      "nationality": "Sweden",
+      "current_team": "No team",
+      "previous_teams": [
+        "fnatic",
+        "FaZe"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 34,
+      "majors": 2,
+      "tournaments_won": 25,
+      "achievements": [
+        "2x Major Winner",
+        "HLTV Top 1 (2015)",
+        "6x event MVP",
+        "25 tournament wins"
+      ]
+    },
+    {
+      "name": "oSee",
+      "nationality": "United States",
+      "current_team": "NRG",
+      "previous_teams": [
+        "Liquid",
+        "Triumph"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 27,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $282,501"
+      ]
+    },
+    {
+      "name": "oskar",
+      "nationality": "Czech Republic",
+      "current_team": "Retired",
+      "previous_teams": [
+        "mousesports",
+        "HellRaisers"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 35,
+      "majors": 0,
+      "tournaments_won": 4,
+      "achievements": [
+        "HLTV Top 14 (2018)",
+        "2x event MVP",
+        "4 tournament wins"
+      ]
+    },
+    {
+      "name": "pashaBiceps",
+      "nationality": "Poland",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Virtus.pro"
+      ],
+      "role": [
+        "AWP",
+        "Rifler"
+      ],
+      "age": 38,
+      "majors": 1,
+      "tournaments_won": 12,
+      "achievements": [
+        "Major Winner (EMS One Katowice 2014)",
+        "HLTV Top 3 (2014)",
+        "3x event MVP",
+        "12 tournament wins"
+      ]
+    },
+    {
+      "name": "Perfecto",
+      "nationality": "Russia",
+      "current_team": "No team",
+      "previous_teams": [],
+      "role": [
+        "Support"
+      ],
+      "age": 26,
+      "majors": 1,
+      "tournaments_won": 10,
+      "achievements": [
+        "Major Winner (PGL Major Stockholm 2021)",
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "Plopski",
+      "nationality": "Sweden",
+      "current_team": "Metizport",
+      "previous_teams": [
+        "Ninjas in Pyjamas",
+        "GODSENT"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 24,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "rain",
+      "nationality": "Norway",
+      "current_team": "100 Thieves",
+      "previous_teams": [
+        "G2",
+        "Kinguin"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 31,
+      "majors": 1,
+      "tournaments_won": 19,
+      "achievements": [
+        "Major Winner (PGL Major Antwerp 2022)",
+        "HLTV Top 4 (2017)",
+        "4x event MVP",
+        "19 tournament wins"
+      ]
+    },
+    {
+      "name": "REZ",
+      "nationality": "Sweden",
+      "current_team": "GamerLegion",
+      "previous_teams": [
+        "Fnatic Academy"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 28,
+      "majors": 0,
+      "tournaments_won": 2,
+      "achievements": [
+        "1x event MVP",
+        "2 tournament wins"
+      ]
+    },
+    {
+      "name": "ropz",
+      "nationality": "Estonia",
+      "current_team": "Vitality",
+      "previous_teams": [
+        "FaZe",
+        "MOUZ"
+      ],
+      "role": [
+        "Rifler",
+        "Lurker"
+      ],
+      "age": 26,
+      "majors": 3,
+      "tournaments_won": 32,
+      "achievements": [
+        "3x Major Winner",
+        "HLTV Top 3 (2023, 2025)",
+        "6x event MVP",
+        "32 tournament wins"
+      ]
+    },
+    {
+      "name": "RpK",
+      "nationality": "France",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Vitality",
+        "Team EnVyUs",
+        "Titan"
+      ],
+      "role": [
+        "Support"
+      ],
+      "age": 37,
+      "majors": 0,
+      "tournaments_won": 6,
+      "achievements": [
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "RUSH",
+      "nationality": "United States",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Cloud9",
+        "Complexity"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 32,
+      "majors": 1,
+      "tournaments_won": 5,
+      "achievements": [
+        "Major Winner (ELEAGUE Major 2018)",
+        "1x event MVP",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "s1mple",
+      "nationality": "Ukraine",
+      "current_team": "BC.Game",
+      "previous_teams": [
+        "NAVI",
+        "Liquid",
+        "FlipSid3"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 28,
+      "majors": 1,
+      "tournaments_won": 17,
+      "achievements": [
+        "Major Winner (PGL Major Stockholm 2021)",
+        "HLTV Top 1 (2018, 2021, 2022)",
+        "21x event MVP",
+        "17 tournament wins"
+      ]
+    },
+    {
+      "name": "saffee",
+      "nationality": "Brazil",
+      "current_team": "paiN",
+      "previous_teams": [
+        "FURIA",
+        "MIBR"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $199,599"
+      ]
+    },
+    {
+      "name": "ScreaM",
+      "nationality": "Belgium",
+      "current_team": "Clutchain",
+      "previous_teams": [
+        "Liquid",
+        "G2",
+        "Titan"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 32,
+      "majors": 0,
+      "tournaments_won": 6,
+      "achievements": [
+        "HLTV Top 7 (2013)",
+        "1x event MVP",
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "sergej",
+      "nationality": "Finland",
+      "current_team": "No team",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 24,
+      "majors": 0,
+      "tournaments_won": 2,
+      "achievements": [
+        "HLTV Top 13 (2019)",
+        "1x event MVP",
+        "2 tournament wins"
+      ]
+    },
+    {
+      "name": "sh1ro",
+      "nationality": "Russia",
+      "current_team": "Spirit",
+      "previous_teams": [
+        "Cloud9",
+        "Gambit"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 25,
+      "majors": 1,
+      "tournaments_won": 17,
+      "achievements": [
+        "Major Winner (Perfect World Shanghai Major 2024)",
+        "HLTV Top 3 (2022)",
+        "4x event MVP",
+        "17 tournament wins"
+      ]
+    },
+    {
+      "name": "shox",
+      "nationality": "France",
+      "current_team": "No team",
+      "previous_teams": [
+        "G2",
+        "Vitality",
+        "Team LDLC"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 34,
+      "majors": 1,
+      "tournaments_won": 18,
+      "achievements": [
+        "Major Winner (DreamHack Winter 2014)",
+        "HLTV Top 3 (2013)",
+        "4x event MVP",
+        "18 tournament wins"
+      ]
+    },
+    {
+      "name": "siuhy",
+      "nationality": "Poland",
+      "current_team": "Liquid",
+      "previous_teams": [
+        "MOUZ",
+        "Anonymo"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 23,
+      "majors": 0,
+      "tournaments_won": 3,
+      "achievements": [
+        "3 tournament wins"
+      ]
+    },
+    {
+      "name": "sjuush",
+      "nationality": "Denmark",
+      "current_team": "Ninjas in Pyjamas",
+      "previous_teams": [
+        "Heroic",
+        "North",
+        "MAD Lions"
+      ],
+      "role": [
+        "Support"
+      ],
+      "age": 27,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "Snappi",
+      "nationality": "Denmark",
+      "current_team": "Ninjas in Pyjamas",
+      "previous_teams": [
+        "OG",
+        "Epsilon"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 36,
+      "majors": 0,
+      "tournaments_won": 1,
+      "achievements": [
+        "1 tournament win"
+      ]
+    },
+    {
+      "name": "Snax",
+      "nationality": "Poland",
+      "current_team": "GamerLegion",
+      "previous_teams": [
+        "Virtus.pro",
+        "ENCE",
+        "G2"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 33,
+      "majors": 1,
+      "tournaments_won": 15,
+      "achievements": [
+        "Major Winner (EMS One Katowice 2014)",
+        "HLTV Top 4 (2014, 2015)",
+        "7x event MVP",
+        "15 tournament wins"
+      ]
+    },
+    {
+      "name": "Spinx",
+      "nationality": "Israel",
+      "current_team": "MOUZ",
+      "previous_teams": [
+        "ENCE",
+        "Endpoint"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 25,
+      "majors": 1,
+      "tournaments_won": 10,
+      "achievements": [
+        "Major Winner (BLAST.tv Paris Major 2023)",
+        "HLTV Top 5 (2023)",
+        "1x event MVP",
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "Staehr",
+      "nationality": "Denmark",
+      "current_team": "Astralis",
+      "previous_teams": [
+        "Sprout",
+        "Astralis Talent"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 22,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $276,439"
+      ]
+    },
+    {
+      "name": "stavn",
+      "nationality": "Denmark",
+      "current_team": "Ninjas in Pyjamas",
+      "previous_teams": [
+        "Heroic",
+        "North"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 24,
+      "majors": 0,
+      "tournaments_won": 6,
+      "achievements": [
+        "HLTV Top 9 (2023)",
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "Stewie2K",
+      "nationality": "United States",
+      "current_team": "No team",
+      "previous_teams": [
+        "Cloud9",
+        "Liquid",
+        "MIBR"
+      ],
+      "role": [
+        "Entry",
+        "IGL"
+      ],
+      "age": 28,
+      "majors": 1,
+      "tournaments_won": 14,
+      "achievements": [
+        "Major Winner (ELEAGUE Major 2018)",
+        "2x event MVP",
+        "14 tournament wins"
+      ]
+    },
+    {
+      "name": "Summer",
+      "nationality": "China",
+      "current_team": "Rare Atom",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 29,
+      "majors": 0,
+      "tournaments_won": 0,
+      "achievements": [
+        "Career earnings $223,197"
+      ]
+    },
+    {
+      "name": "suNny",
+      "nationality": "Finland",
+      "current_team": "Retired",
+      "previous_teams": [
+        "mousesports",
+        "FaZe"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 4,
+      "achievements": [
+        "HLTV Top 16 (2018)",
+        "4 tournament wins"
+      ]
+    },
+    {
+      "name": "syrsoN",
+      "nationality": "Germany",
+      "current_team": "No team",
+      "previous_teams": [
+        "Sprout"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 30,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "HLTV Top 10 (2020)",
+        "2x event MVP",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "tabseN",
+      "nationality": "Germany",
+      "current_team": "BIG",
+      "previous_teams": [
+        "mousesports"
+      ],
+      "role": [
+        "Rifler",
+        "IGL"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "TACO",
+      "nationality": "Brazil",
+      "current_team": "No team",
+      "previous_teams": [
+        "SK Gaming",
+        "Luminosity",
+        "MIBR",
+        "Liquid"
+      ],
+      "role": [
+        "Support"
+      ],
+      "age": 31,
+      "majors": 2,
+      "tournaments_won": 13,
+      "achievements": [
+        "2x Major Winner",
+        "13 tournament wins"
+      ]
+    },
+    {
+      "name": "tarik",
+      "nationality": "United States",
+      "current_team": "No team",
+      "previous_teams": [
+        "Cloud9",
+        "MIBR",
+        "Evil Geniuses"
+      ],
+      "role": [
+        "Rifler",
+        "IGL"
+      ],
+      "age": 30,
+      "majors": 1,
+      "tournaments_won": 10,
+      "achievements": [
+        "Major Winner (ELEAGUE Major 2018)",
+        "1x event MVP",
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "TaZ",
+      "nationality": "Poland",
+      "current_team": "BC.Game",
+      "previous_teams": [
+        "Virtus.pro",
+        "HONORIS"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 40,
+      "majors": 1,
+      "tournaments_won": 15,
+      "achievements": [
+        "Major Winner (EMS One Katowice 2014)",
+        "15 tournament wins"
+      ]
+    },
+    {
+      "name": "TeSeS",
+      "nationality": "Denmark",
+      "current_team": "Falcons",
+      "previous_teams": [
+        "Heroic",
+        "Copenhagen Flames"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 25,
+      "majors": 1,
+      "tournaments_won": 8,
+      "achievements": [
+        "Major Winner (IEM Cologne Major 2026)",
+        "8 tournament wins"
+      ]
+    },
+    {
+      "name": "torzsi",
+      "nationality": "Hungary",
+      "current_team": "MOUZ",
+      "previous_teams": [],
+      "role": [
+        "AWP"
+      ],
+      "age": 24,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "HLTV Top 17 (2025)",
+        "1x event MVP",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "Twistzz",
+      "nationality": "Canada",
+      "current_team": "FaZe",
+      "previous_teams": [
+        "Liquid",
+        "MIBR"
+      ],
+      "role": [
+        "Rifler"
+      ],
+      "age": 26,
+      "majors": 1,
+      "tournaments_won": 18,
+      "achievements": [
+        "Major Winner (PGL Major Antwerp 2022)",
+        "HLTV Top 9 (2019)",
+        "2x event MVP",
+        "18 tournament wins"
+      ]
+    },
+    {
+      "name": "w0nderful",
+      "nationality": "Ukraine",
+      "current_team": "Natus Vincere",
+      "previous_teams": [
+        "Monte"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 21,
+      "majors": 1,
+      "tournaments_won": 6,
+      "achievements": [
+        "Major Winner (PGL CS2 Major Copenhagen 2024)",
+        "HLTV Top 11 (2024)",
+        "1x event MVP",
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "woxic",
+      "nationality": "Türkiye",
+      "current_team": "Aurora",
+      "previous_teams": [
+        "mousesports",
+        "HellRaisers"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 27,
+      "majors": 0,
+      "tournaments_won": 4,
+      "achievements": [
+        "HLTV Top 12 (2019)",
+        "1x event MVP",
+        "4 tournament wins"
+      ]
+    },
+    {
+      "name": "XANTARES",
+      "nationality": "Türkiye",
+      "current_team": "Aurora",
+      "previous_teams": [
+        "BIG",
+        "Space Soldiers"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 31,
+      "majors": 0,
+      "tournaments_won": 6,
+      "achievements": [
+        "HLTV Top 14 (2025)",
+        "2x event MVP",
+        "6 tournament wins"
+      ]
+    },
+    {
+      "name": "xertioN",
+      "nationality": "Israel",
+      "current_team": "MOUZ",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 22,
+      "majors": 0,
+      "tournaments_won": 5,
+      "achievements": [
+        "HLTV Top 14 (2024)",
+        "5 tournament wins"
+      ]
+    },
+    {
+      "name": "Xyp9x",
+      "nationality": "Denmark",
+      "current_team": "No team",
+      "previous_teams": [
+        "Dignitas"
+      ],
+      "role": [
+        "Support"
+      ],
+      "age": 30,
+      "majors": 4,
+      "tournaments_won": 27,
+      "achievements": [
+        "4x Major Winner",
+        "HLTV Top 13 (2017, 2018)",
+        "1x event MVP",
+        "27 tournament wins"
+      ]
+    },
+    {
+      "name": "YEKINDAR",
+      "nationality": "Latvia",
+      "current_team": "FURIA",
+      "previous_teams": [
+        "Virtus.pro",
+        "Spirit"
+      ],
+      "role": [
+        "Entry"
+      ],
+      "age": 26,
+      "majors": 0,
+      "tournaments_won": 8,
+      "achievements": [
+        "HLTV Top 8 (2021)",
+        "8 tournament wins"
+      ]
+    },
+    {
+      "name": "yuurih",
+      "nationality": "Brazil",
+      "current_team": "FURIA",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 26,
+      "majors": 0,
+      "tournaments_won": 8,
+      "achievements": [
+        "HLTV Top 14 (2020)",
+        "3x event MVP",
+        "8 tournament wins"
+      ]
+    },
+    {
+      "name": "Zeus",
+      "nationality": "Ukraine",
+      "current_team": "Retired",
+      "previous_teams": [
+        "Natus Vincere",
+        "Gambit"
+      ],
+      "role": [
+        "IGL"
+      ],
+      "age": 38,
+      "majors": 1,
+      "tournaments_won": 17,
+      "achievements": [
+        "Major Winner (PGL Major Krakow 2017)",
+        "17 tournament wins"
+      ]
+    },
+    {
+      "name": "zont1x",
+      "nationality": "Ukraine",
+      "current_team": "Spirit",
+      "previous_teams": [],
+      "role": [
+        "Rifler"
+      ],
+      "age": 21,
+      "majors": 1,
+      "tournaments_won": 10,
+      "achievements": [
+        "Major Winner (Perfect World Shanghai Major 2024)",
+        "10 tournament wins"
+      ]
+    },
+    {
+      "name": "ZywOo",
+      "nationality": "France",
+      "current_team": "Vitality",
+      "previous_teams": [
+        "aAa"
+      ],
+      "role": [
+        "AWP"
+      ],
+      "age": 25,
+      "majors": 3,
+      "tournaments_won": 30,
+      "achievements": [
+        "3x Major Winner",
+        "HLTV Top 1 (2019, 2020, 2023, 2025)",
+        "32x event MVP",
+        "30 tournament wins"
+      ]
+    }
+  ]
+}

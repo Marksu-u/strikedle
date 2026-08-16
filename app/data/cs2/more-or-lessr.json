@@ -1,0 +1,201 @@
+{
+  "game": "more-or-lessr",
+  "players": [
+    {
+      "name": "apEX",
+      "team": "Vitality",
+      "nationality": "France",
+      "tournaments_won": 39,
+      "prize_money": 2342802
+    },
+    {
+      "name": "blameF",
+      "team": "BIG",
+      "nationality": "Denmark",
+      "tournaments_won": 1,
+      "prize_money": 700000
+    },
+    {
+      "name": "broky",
+      "team": "FaZe",
+      "nationality": "Latvia",
+      "tournaments_won": 11,
+      "prize_money": 1100000
+    },
+    {
+      "name": "Brollan",
+      "team": "Heroic",
+      "nationality": "Sweden",
+      "tournaments_won": 5,
+      "prize_money": 500000
+    },
+    {
+      "name": "coldzera",
+      "team": "No team",
+      "nationality": "Brazil",
+      "tournaments_won": 15,
+      "prize_money": 1200000
+    },
+    {
+      "name": "device",
+      "team": "100 Thieves",
+      "nationality": "Denmark",
+      "tournaments_won": 29,
+      "prize_money": 2000000
+    },
+    {
+      "name": "donk",
+      "team": "Spirit",
+      "nationality": "Russia",
+      "tournaments_won": 10,
+      "prize_money": 600000
+    },
+    {
+      "name": "dupreeh",
+      "team": "Retired",
+      "nationality": "Denmark",
+      "tournaments_won": 31,
+      "prize_money": 2000000
+    },
+    {
+      "name": "electroNic",
+      "team": "BC.Game",
+      "nationality": "Russia",
+      "tournaments_won": 16,
+      "prize_money": 1300000
+    },
+    {
+      "name": "FalleN",
+      "team": "FURIA",
+      "nationality": "Brazil",
+      "tournaments_won": 18,
+      "prize_money": 1300000
+    },
+    {
+      "name": "flameZ",
+      "team": "Vitality",
+      "nationality": "Israel",
+      "tournaments_won": 19,
+      "prize_money": 1271778
+    },
+    {
+      "name": "frozen",
+      "team": "FaZe",
+      "nationality": "Slovakia",
+      "tournaments_won": 8,
+      "prize_money": 700000
+    },
+    {
+      "name": "GuardiaN",
+      "team": "Retired",
+      "nationality": "Slovakia",
+      "tournaments_won": 17,
+      "prize_money": 798053
+    },
+    {
+      "name": "huNter-",
+      "team": "G2",
+      "nationality": "Bosnia and Herzegovina",
+      "tournaments_won": 7,
+      "prize_money": 900000
+    },
+    {
+      "name": "jks",
+      "team": "FlyQuest",
+      "nationality": "Australia",
+      "tournaments_won": 5,
+      "prize_money": 500000
+    },
+    {
+      "name": "KSCERATO",
+      "team": "FURIA",
+      "nationality": "Brazil",
+      "tournaments_won": 8,
+      "prize_money": 600000
+    },
+    {
+      "name": "m0NESY",
+      "team": "Falcons",
+      "nationality": "Russia",
+      "tournaments_won": 7,
+      "prize_money": 700000
+    },
+    {
+      "name": "Magisk",
+      "team": "BC.Game",
+      "nationality": "Denmark",
+      "tournaments_won": 26,
+      "prize_money": 1800000
+    },
+    {
+      "name": "mezii",
+      "team": "Vitality",
+      "nationality": "United Kingdom",
+      "tournaments_won": 17,
+      "prize_money": 1152000
+    },
+    {
+      "name": "NAF",
+      "team": "Liquid",
+      "nationality": "Canada",
+      "tournaments_won": 12,
+      "prize_money": 1500000
+    },
+    {
+      "name": "NiKo",
+      "team": "Falcons",
+      "nationality": "Bosnia and Herzegovina",
+      "tournaments_won": 19,
+      "prize_money": 1500000
+    },
+    {
+      "name": "rain",
+      "team": "100 Thieves",
+      "nationality": "Norway",
+      "tournaments_won": 19,
+      "prize_money": 1200000
+    },
+    {
+      "name": "ropz",
+      "team": "Vitality",
+      "nationality": "Estonia",
+      "tournaments_won": 32,
+      "prize_money": 2068665
+    },
+    {
+      "name": "s1mple",
+      "team": "BC.Game",
+      "nationality": "Ukraine",
+      "tournaments_won": 17,
+      "prize_money": 1752367
+    },
+    {
+      "name": "sh1ro",
+      "team": "Spirit",
+      "nationality": "Russia",
+      "tournaments_won": 17,
+      "prize_money": 800000
+    },
+    {
+      "name": "Twistzz",
+      "team": "FaZe",
+      "nationality": "Canada",
+      "tournaments_won": 18,
+      "prize_money": 1300000
+    },
+    {
+      "name": "Xyp9x",
+      "team": "No team",
+      "nationality": "Denmark",
+      "tournaments_won": 27,
+      "prize_money": 1900000
+    },
+    {
+      "name": "ZywOo",
+      "team": "Vitality",
+      "nationality": "France",
+      "tournaments_won": 30,
+      "prize_money": 2185460
+    }
+  ]
+}
