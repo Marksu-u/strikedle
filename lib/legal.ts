@@ -42,7 +42,7 @@ export const DATA_SOURCE = "https://www.hltv.org/";
 export const DATA_UPDATED = new Date(`${dataMeta.updated}T00:00:00Z`);
 
 // Public source repository
-export const SOURCE_REPO = "github.com/Marksu-u/cs-gamedle";
+export const SOURCE_REPO = "github.com/Marksu-u/strikedle";
 
 export const X_HANDLE = "marksu_u";
 export const X_URL = `https://x.com/${X_HANDLE}`;
