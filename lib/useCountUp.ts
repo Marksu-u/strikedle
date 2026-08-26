@@ -10,6 +10,25 @@ function easeOut(t: number): number {
   return 1 - Math.pow(1 - t, 3);
 }
 
+// How far along the reveal is, from a duration and however long has elapsed.
+//
+// Exported, and separate from the hook, because the clamp below is the whole
+// content of a bug and the hook is a poor place to prove it: reproducing the
+// offending frame through React's effects and jsdom's animation frames tests
+// the harness rather than the arithmetic.
+//
+// Clamped at BOTH ends. The upper bound is obvious. The lower one is not, and
+// it is the one that showed: requestAnimationFrame hands its callback the time
+// the FRAME began, which can predate the `performance.now()` captured a moment
+// earlier — measured at -0.9ms on the first frame of a real reveal. A negative
+// t eases to a small negative value, -0.04 trophies rounds to -0 (a distinct
+// value in JS), and Intl prints -0 as "-0". Every count-up in More or Lessr
+// opened on a minus sign for one frame.
+export function progressAt(elapsed: number, duration: number): number {
+  if (duration === 0) return 1;
+  return easeOut(Math.min(1, Math.max(0, elapsed / duration)));
+}
+
 // Counts from zero up to `target` when `active` turns on.
 //
 // Only the TRANSITION animates. A card that is already revealed when it mounts
@@ -67,9 +86,9 @@ export function useCountUp(
     let frame = 0;
     const start = performance.now();
     const tick = (now: number) => {
-      const t = duration === 0 ? 1 : Math.min(1, (now - start) / duration);
-      setProgress(easeOut(t));
-      if (t < 1) {
+      const progress = progressAt(now - start, duration);
+      setProgress(progress);
+      if (progress < 1) {
         frame = requestAnimationFrame(tick);
         return;
       }

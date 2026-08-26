@@ -20,7 +20,10 @@ export default function Key({ label, state, wide, flash, onPress }: Props) {
     <button
       type="button"
       onClick={() => onPress(label)}
-      className={`flex h-12 min-w-7 items-center justify-center rounded-md text-sm font-semibold uppercase transition active:scale-95 ${wide ? "px-3 text-xs" : "flex-1"} ${STATE_CLASS[state]} ${flash ? "ring-2 ring-[color:var(--accent)] brightness-125" : ""}`}
+      // `flash` is driven by the game, so a key struck on the physical keyboard
+      // depresses exactly like one that was tapped — `active:` alone only ever
+      // answers the mouse.
+      className={`flex h-12 min-w-7 items-center justify-center rounded-md text-sm font-semibold uppercase transition-transform duration-75 active:scale-90 ${wide ? "px-3 text-xs" : "flex-1"} ${STATE_CLASS[state]} ${flash ? "scale-90 ring-2 ring-[color:var(--accent)] brightness-125" : ""}`}
     >
       {label === "DEL" ? "⌫" : label}
     </button>

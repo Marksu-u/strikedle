@@ -21,6 +21,12 @@
   --wordle-correct: #6aaa64; /* vert : bonne lettre, bonne place */
   --wordle-present: #d8a93b; /* doré (cohérent accent) : présente, mal placée */
   --wordle-absent: #3a3d44; /* gris : absente */
+
+  /* Interrupteur de mouvement, lu par les keyframes qui portent un déplacement.
+     Le passer à 0 vide l'amplitude sans toucher à la durée : l'animation joue
+     toujours, et l'événement `animationend` sur lequel le jeu s'appuie continue
+     d'arriver. Voir le bloc prefers-reduced-motion en bas de fichier. */
+  --motion: 1;
 }
 
 /* Police d'affichage (Saira Condensed, exposée par next/font dans le layout). */
@@ -53,41 +59,124 @@
   color: transparent;
 }
 
-/* Animations Wordle. Référencées via des utilitaires Tailwind arbitraires
-   (ex. animate-[wordle-flip_0.5s_ease_forwards]) dans les composants. */
+/* ─────────────────────────── Wordle ─────────────────────────── */
+
+/* La bascule PORTE la couleur. La tuile reste vide jusqu'à mi-parcours, où elle
+   est de chant, et ne prend --tile-bg/--tile-fg qu'à cet instant précis.
+   Sans ça, la ligne entière s'affiche coloriée dès la validation et la cascade
+   ne fait plus que faire tourner des tuiles dont la réponse est déjà lisible :
+   le suspense de la révélation disparaît alors qu'elle dure encore une seconde.
+
+   Les couleurs d'arrivée arrivent par variables, posées par la tuile selon son
+   état : un seul keyframe sert les trois. Le mode de remplissage `both` fait le
+   reste — le 0 % tient pendant le délai de cascade (la tuile attend son tour
+   sans rien dévoiler), le 100 % tient après. */
 @keyframes wordle-flip {
   0% {
-    transform: rotateX(0);
+    transform: rotateX(0deg);
+    background-color: transparent;
+    border-color: var(--border);
+    color: var(--foreground);
+  }
+  49.9% {
+    transform: rotateX(calc(90deg * var(--motion)));
+    background-color: transparent;
+    border-color: var(--border);
+    color: var(--foreground);
   }
   50% {
-    transform: rotateX(90deg);
+    transform: rotateX(calc(90deg * var(--motion)));
+    background-color: var(--tile-bg);
+    border-color: var(--tile-bg);
+    color: var(--tile-fg);
   }
   100% {
-    transform: rotateX(0);
+    transform: rotateX(0deg);
+    background-color: var(--tile-bg);
+    border-color: var(--tile-bg);
+    color: var(--tile-fg);
   }
 }
+
+/* Durée et délai sont posés en ligne par la tuile (lib/wordle/timing.ts) :
+   la cascade se règle d'un seul endroit, du côté qui connaît la colonne. */
+.wordle-tile-flip {
+  animation-name: wordle-flip;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+/* Frappe : la tuile encaisse la lettre. Courte et légèrement dépassante, pour
+   que la saisie ait un retour sans retarder la suivante. */
 @keyframes wordle-pop {
   0% {
-    transform: scale(0.85);
+    transform: scale(0.86);
+  }
+  55% {
+    transform: scale(1.06);
   }
   100% {
     transform: scale(1);
   }
 }
+.wordle-tile-pop {
+  animation: wordle-pop 0.12s ease-out;
+}
+
+/* Victoire : la ligne gagnante rebondit, lettre après lettre, une fois la
+   cascade finie. C'est la seule récompense visuelle du jeu. */
+@keyframes wordle-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(-24%);
+  }
+  60% {
+    transform: translateY(6%);
+  }
+  80% {
+    transform: translateY(-3%);
+  }
+}
+.wordle-tile-bounce {
+  animation-name: wordle-bounce;
+  animation-timing-function: ease-out;
+}
+
+/* Mot refusé : amplitude décroissante, sinon la ligne oscille comme un
+   métronome au lieu de buter contre quelque chose. */
 @keyframes wordle-shake {
   0%,
   100% {
     transform: translateX(0);
   }
-  20%,
-  60% {
+  15% {
+    transform: translateX(-8px);
+  }
+  30% {
+    transform: translateX(8px);
+  }
+  45% {
     transform: translateX(-6px);
   }
-  40%,
-  80% {
+  60% {
     transform: translateX(6px);
   }
+  75% {
+    transform: translateX(-3px);
+  }
+  90% {
+    transform: translateX(3px);
+  }
 }
+/* Durée posée en ligne par la ligne (SHAKE_MS), comme pour la bascule. */
+.wordle-row-shake {
+  animation-name: wordle-shake;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes wordle-tab {
   0% {
     opacity: 0;
@@ -99,18 +188,65 @@
   }
 }
 
-/* More or Lessr — entrée d'une nouvelle carte challenger + révélation de valeur. */
-@keyframes mol-slide-in {
+/* ────────────────────────── More or Lessr ────────────────────────── */
+
+/* La chaîne avance en glissant. Le challenger prend la place de l'ancre et un
+   nouveau challenger entre par la droite : les deux colonnes partent donc du
+   MÊME décalage — une largeur de carte plus la gouttière — et arrivent
+   ensemble. Rien ne se croise, et le pas de côté se lit comme un carrousel
+   plutôt que comme deux cartes remplacées sur place. */
+@keyframes mol-advance {
+  0% {
+    transform: translateX(calc((100% + 0.75rem) * var(--motion)));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.mol-advance {
+  animation: mol-advance 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Le nouveau challenger, lui, vient de hors champ : il se découvre en entrant. */
+@keyframes mol-advance-in {
   0% {
     opacity: 0;
-    transform: translateX(16px);
+    transform: translateX(calc((100% + 0.75rem) * var(--motion)));
+  }
+  55% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-@keyframes mol-reveal {
+.mol-advance-in {
+  animation: mol-advance-in 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Verdict : la pastille centrale et la coche de la carte jouée encaissent la
+   réponse d'un même à-coup. */
+@keyframes mol-verdict {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.mol-verdict {
+  animation: mol-verdict 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Ouverture d'une boîte de dialogue (aide, règles). */
+@keyframes modal-in {
   0% {
     opacity: 0;
     transform: scale(0.9);
@@ -177,11 +313,26 @@
   animation: backdrop-in 0.22s ease;
 }
 
-/* Le tiroir s'ouvre en pleine page : sans ceci il traverse l'écran à chaque
-   ouverture pour qui a demandé moins de mouvement. */
+/* Mouvement réduit.
+
+   Deux régimes, et la différence compte. La bascule Wordle est la seule
+   animation dont la FIN pilote le jeu : c'est son `animationend` qui autorise
+   le bandeau de résultat à s'afficher. La supprimer bloquerait la partie sur un
+   écran qui n'arrive jamais. Elle garde donc sa durée et perd son déplacement,
+   via --motion : la couleur arrive toujours à mi-parcours, sans rotation.
+   Tout le reste est décoratif et disparaît franchement. */
 @media (prefers-reduced-motion: reduce) {
+  .theme-cs2 {
+    --motion: 0;
+  }
   .drawer-panel,
-  .drawer-backdrop {
+  .drawer-backdrop,
+  .wordle-tile-pop,
+  .wordle-tile-bounce,
+  .wordle-row-shake,
+  .mol-advance,
+  .mol-advance-in,
+  .mol-verdict {
     animation: none;
   }
 }

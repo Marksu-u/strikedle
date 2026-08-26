@@ -17,6 +17,10 @@ type Props = {
   round: number;
   score: number;
   revealed: boolean; // round played: the challenger's value is shown
+  // Every revealed number has finished climbing. `revealed` is true from the
+  // click; this only becomes true two seconds later, once the count-up has
+  // actually arrived. Everything that passes judgement waits for it.
+  settled: boolean;
   lastGuess: Direction | null;
   lastCorrect: boolean | null;
   onGuess: (direction: Direction) => void;
@@ -30,6 +34,7 @@ export default function ChainBoard({
   round,
   score,
   revealed,
+  settled,
   lastGuess,
   lastCorrect,
   onGuess,
@@ -61,16 +66,39 @@ export default function ChainBoard({
     if (landed.current >= expected) onRevealComplete();
   }
 
-  // The green/red flash applies to the clicked card. Which one is recovered from
-  // the direction: "more" = the challenger was clicked, "less" = the anchor.
+  // Which card was clicked, and what it may say about it. Which one is
+  // recovered from the direction: "more" = the challenger was clicked,
+  // "less" = the anchor.
+  //
+  // "picked" is the whole point of the four states. The click has to be
+  // acknowledged at once — otherwise the board looks like it swallowed it — but
+  // acknowledging is not judging, and the card holds a neutral ring until the
+  // numbers it is being judged against have finished climbing.
   function cardState(
     which: "anchor" | "challenger",
-  ): "idle" | "correct" | "wrong" {
+  ): "idle" | "picked" | "correct" | "wrong" {
     if (!revealed || lastGuess === null) return "idle";
     const picked = lastGuess === "more" ? "challenger" : "anchor";
     if (which !== picked) return "idle";
+    // lastCorrect is checked as well as lastGuess: null is not "wrong". A
+    // ternary on it alone marked an unjudged round with a cross.
+    if (!settled || lastCorrect === null) return "picked";
     return lastCorrect ? "correct" : "wrong";
   }
+
+  // A round that has been ANSWERED and watched out. Two conditions, for two
+  // different reasons: round one is revealed with no guess behind it when the
+  // board is rebuilt from a saved run and there is nothing to judge, and a
+  // round still counting up has an answer that the player has not yet been
+  // shown the evidence for.
+  const verdict = settled && lastCorrect !== null;
+
+  // The header score is the third thing that used to answer the round on the
+  // click. The reducer banks the point on the guess — correctly, it is the
+  // score — but printing it straight away tells the player they were right two
+  // seconds before the numbers get there. Until the round settles, the header
+  // shows the score as it stood going in.
+  const shownScore = verdict || lastCorrect !== true ? score : score - 1;
 
   return (
     <div className="flex w-full max-w-xl flex-col items-center gap-5">
@@ -103,7 +131,7 @@ export default function ChainBoard({
         <div className="flex w-full items-center justify-between text-xs tracking-widest text-[color:var(--muted)] uppercase">
           <span>{t("round", { round, total: TOTAL_ROUNDS })}</span>
           <span className="text-[color:var(--accent)]">{label}</span>
-          <span>{t("score", { score })}</span>
+          <span>{t("score", { score: shownScore })}</span>
         </div>
       </div>
 
@@ -115,37 +143,95 @@ export default function ChainBoard({
         })}
       </p>
 
-      <div className="flex w-full items-stretch gap-3">
-        {/* Ancre : valeur visible. La cliquer = parier que le challenger a MOINS.
-            Round one is the exception — there is no value carried forward yet,
-            so both sides stay face down and turn over together on the pick. */}
-        <PlayerCard
-          player={anchor}
-          category={category}
-          revealed={round > 1 || revealed}
-          state={cardState("anchor")}
-          onPick={revealed ? undefined : () => onGuess("less")}
-          onRevealDone={handleRevealDone}
-        />
-        <span className="cs2-display self-center text-xl font-extrabold text-[color:var(--accent-hot)] italic">
-          VS
-        </span>
-        {/* Challenger: hidden. Clicking it = betting it is MORE than the anchor.
-            key sur le pseudo : rejoue l'animation d'entrée à chaque challenger. */}
+      {/* The two cards ride a rail. Each round it steps one notch to the left:
+          the challenger takes the anchor's place and a fresh challenger arrives
+          from off-screen, which is the chain made visible — the value you just
+          read is the value you now compare against.
+
+          Both columns are keyed on the round, so the pair re-enters every time
+          the chain moves. Remounting the anchor costs nothing: its number is
+          already final when it appears, and the count-up shows a value that
+          mounts settled outright rather than replaying a reveal already watched.
+
+          The badge is laid OVER the seam rather than sitting between the cards.
+          Between them it would push the columns apart by its own width, and the
+          rail's step would no longer be one card wide — which is exactly the
+          distance the slide animates. Overhead, it is also the fixed point the
+          movement is read against. */}
+      <div className="relative w-full overflow-hidden">
+        <div className="flex w-full items-stretch gap-3">
+          {/* Ancre : valeur visible. La cliquer = parier que le challenger a MOINS.
+              Round one is the exception — there is no value carried forward yet,
+              so both sides stay face down and turn over together on the pick. */}
+          <div key={`anchor-${round}`} className="mol-advance flex flex-1">
+            <PlayerCard
+              player={anchor}
+              category={category}
+              revealed={round > 1 || revealed}
+              state={cardState("anchor")}
+              onPick={revealed ? undefined : () => onGuess("less")}
+              onRevealDone={handleRevealDone}
+            />
+          </div>
+          {/* Challenger: hidden. Clicking it = betting it is MORE than the anchor. */}
+          <div
+            key={`challenger-${round}`}
+            className="mol-advance-in flex flex-1"
+          >
+            <PlayerCard
+              player={challenger}
+              category={category}
+              revealed={revealed}
+              state={cardState("challenger")}
+              onPick={revealed ? undefined : () => onGuess("more")}
+              onRevealDone={handleRevealDone}
+            />
+          </div>
+        </div>
+
+        {/* Le badge ne prend jamais le clic : il couvre la couture, donc le bord
+            intérieur des deux cartes. */}
         <div
-          key={challenger.name}
-          className="flex flex-1 animate-[mol-slide-in_0.25s_ease]"
+          key={verdict ? `verdict-${round}` : `vs-${round}`}
+          aria-hidden="true"
+          className={`pointer-events-none absolute top-1/2 left-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border-2 bg-[var(--background)] ${
+            verdict ? "mol-verdict" : ""
+          } ${
+            !verdict
+              ? "border-[color:var(--border)]"
+              : lastCorrect
+                ? "border-[color:var(--wordle-correct)]"
+                : "border-[color:var(--accent-hot)]"
+          }`}
         >
-          <PlayerCard
-            player={challenger}
-            category={category}
-            revealed={revealed}
-            state={cardState("challenger")}
-            onPick={revealed ? undefined : () => onGuess("more")}
-            onRevealDone={handleRevealDone}
-          />
+          {verdict ? (
+            <>
+              <span
+                className={`cs2-display text-lg leading-none font-extrabold italic ${
+                  lastCorrect
+                    ? "text-[color:var(--wordle-correct)]"
+                    : "text-[color:var(--accent-hot)]"
+                }`}
+              >
+                {score}
+              </span>
+              <span className="text-[0.6rem] leading-none text-[color:var(--muted)]">
+                /{round}
+              </span>
+            </>
+          ) : (
+            <span className="cs2-display text-base font-extrabold text-[color:var(--accent-hot)] italic">
+              VS
+            </span>
+          )}
         </div>
       </div>
+
+      {/* Le badge est décoratif : le verdict se dit ici, une fois, pour qui
+          n'a pas l'image. */}
+      <p role="status" className="sr-only">
+        {verdict ? (lastCorrect ? t("correct") : t("wrong")) : ""}
+      </p>
     </div>
   );
 }

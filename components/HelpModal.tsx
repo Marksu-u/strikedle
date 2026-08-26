@@ -36,7 +36,7 @@ export default function HelpModal({ open, onClose, title, children }: Props) {
         if (event.target === event.currentTarget) onClose();
       }}
     >
-      <div className="w-full max-w-lg animate-[mol-reveal_0.2s_ease] rounded-xl border border-[color:var(--border)] bg-[var(--surface)] p-6">
+      <div className="w-full max-w-lg animate-[modal-in_0.2s_ease] rounded-xl border border-[color:var(--border)] bg-[var(--surface)] p-6">
         <div className="flex items-start justify-between gap-4">
           <h2 className="cs2-display text-2xl font-extrabold uppercase italic">
             {title}
