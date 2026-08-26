@@ -139,6 +139,8 @@
     "prizeMoney": "Prize money",
     "round": "Manche {round}/{total}",
     "score": "Score {score}",
+    "correct": "Bonne réponse",
+    "wrong": "Mauvaise réponse",
     "pickMoreWins": "Clique sur le joueur avec le plus de <stat>trophées</stat>",
     "pickHigherPrize": "Clique sur le joueur au plus gros <stat>prize money</stat>",
     "finished": "Terminé",

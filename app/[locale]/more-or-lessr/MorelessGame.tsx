@@ -131,6 +131,9 @@ export default function MorelessGame({ data }: { data: MorelessData }) {
           round={state.round}
           score={state.score}
           revealed={state.status === "revealed"}
+          // Same signal that lets the chain move on: nothing may pass judgement
+          // on the round until the numbers have finished climbing.
+          settled={landed}
           lastGuess={state.lastGuess}
           lastCorrect={state.lastCorrect}
           onGuess={(direction) => dispatch({ type: "GUESS", direction })}

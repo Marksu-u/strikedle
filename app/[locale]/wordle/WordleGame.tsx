@@ -17,6 +17,7 @@ import HelpModal from "@/components/HelpModal";
 import { deriveKeyStates } from "@/lib/wordle/engine";
 import { availableLengths } from "@/lib/wordle/selection";
 import { wordlePoints } from "@/lib/daily/scoring";
+import { SHAKE_MS } from "@/lib/wordle/timing";
 import { useTranslations } from "next-intl";
 import { useDailyPuzzle, useDay } from "@/lib/daily/useDailyPuzzle";
 import type { PuzzleId } from "@/lib/daily/types";
@@ -85,6 +86,14 @@ export default function WordleGame({ data }: { data: WordleData }) {
   const revealing =
     board.justSubmitted !== null && flipped !== board.justSubmitted;
 
+  // The winning row celebrates, once. Gated on `justSubmitted` for the same
+  // reason the flip is: a board read back out of storage is already won, and
+  // replaying the victory on every reload turns a reward into wallpaper.
+  const bounceRow =
+    board.status === "won" && board.justSubmitted !== null && !revealing
+      ? board.justSubmitted
+      : null;
+
   // Records the result as soon as a daily puzzle finishes.
   useEffect(() => {
     if (board.mode !== "daily" || board.status === "playing" || done) return;
@@ -142,7 +151,7 @@ export default function WordleGame({ data }: { data: WordleData }) {
   // `invalid` triggers the shake; it is cleared once the animation is done.
   useEffect(() => {
     if (!board.invalid) return;
-    const id = setTimeout(() => dispatch({ type: "CLEAR_INVALID" }), 400);
+    const id = setTimeout(() => dispatch({ type: "CLEAR_INVALID" }), SHAKE_MS);
     return () => clearTimeout(id);
   }, [board.invalid]);
 
@@ -226,6 +235,7 @@ export default function WordleGame({ data }: { data: WordleData }) {
         <Board
           board={board}
           maxLength={maxLength}
+          bounceRow={bounceRow}
           onFlipEnd={() => setFlipped(board.justSubmitted)}
         />
         {!revealing && (
