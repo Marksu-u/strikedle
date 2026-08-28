@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LegalPage, { Section } from "@/components/legal/LegalPage";
+import { pageTo } from "@/components/links";
 import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -25,6 +26,7 @@ export default async function CookiesPage({
     <LegalPage title={t("cookies.title")}>
       <Section heading={t("cookies.what.heading")}>
         <p>{t("cookies.what.body")}</p>
+        <p>{t.rich("cookies.what.privacy", { privacy: pageTo("/privacy") })}</p>
       </Section>
 
       <Section heading={t("cookies.necessary.heading")}>

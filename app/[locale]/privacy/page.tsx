@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LegalPage, { Section } from "@/components/legal/LegalPage";
-import { CONTACT_EMAIL, DATA_SOURCE, HOST, PLAYER_COUNT } from "@/lib/legal";
+import { linkTo, mailTo, pageTo } from "@/components/links";
+import {
+  CNIL_URL,
+  CONTACT_EMAIL,
+  DATA_SOURCE,
+  HOST,
+  PLAYER_COUNT,
+} from "@/lib/legal";
 import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -36,10 +43,16 @@ export default async function PrivacyPage({
           <li>{t("privacy.device.locale")}</li>
         </ul>
         <p>{t("privacy.device.erase")}</p>
+        <p>
+          {t.rich("privacy.device.cookies", { cookies: pageTo("/cookies") })}
+        </p>
       </Section>
 
       <Section heading={t("privacy.host.heading")}>
         <p>{t("privacy.host.body", { host: HOST.name })}</p>
+        <p>
+          {t.rich("privacy.host.policy", { link: linkTo(HOST.privacyUrl) })}
+        </p>
       </Section>
 
       {/* The section with no equivalent elsewhere: the site ships data about
@@ -47,13 +60,29 @@ export default async function PrivacyPage({
       <Section heading={t("privacy.players.heading")}>
         <p>{t("privacy.players.intro", { count: PLAYER_COUNT })}</p>
         <p>{t("privacy.players.fields")}</p>
-        <p>{t("privacy.players.basis", { source: DATA_SOURCE })}</p>
-        <p>{t("privacy.players.rights", { email: CONTACT_EMAIL })}</p>
+        <p>
+          {t.rich("privacy.players.basis", {
+            source: DATA_SOURCE.name,
+            link: linkTo(DATA_SOURCE.url),
+          })}
+        </p>
+        <p>
+          {t.rich("privacy.players.rights", {
+            email: CONTACT_EMAIL,
+            mail: mailTo(CONTACT_EMAIL),
+          })}
+        </p>
       </Section>
 
       <Section heading={t("privacy.rights.heading")}>
         <p>{t("privacy.rights.body")}</p>
-        <p>{t("privacy.rights.cnil", { email: CONTACT_EMAIL })}</p>
+        <p>
+          {t.rich("privacy.rights.cnil", {
+            email: CONTACT_EMAIL,
+            mail: mailTo(CONTACT_EMAIL),
+            cnil: linkTo(CNIL_URL),
+          })}
+        </p>
       </Section>
 
       <Section heading={t("privacy.changes.heading")}>

@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LegalPage, { Section } from "@/components/legal/LegalPage";
+import { linkTo, mailTo, pageTo, telTo } from "@/components/links";
 import {
   CONTACT_EMAIL,
   DATA_SOURCE,
   HOST,
+  httpsUrl,
+  LICENCE_URL,
   PUBLISHER_ALIAS,
   SOURCE_REPO,
 } from "@/lib/legal";
@@ -27,49 +30,74 @@ export default async function LegalNoticePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("legalPages");
+  const { phone, email: hostEmail } = HOST;
 
   return (
     <LegalPage title={t("notice.title")}>
       <Section heading={t("notice.publisher.heading")}>
         <p>{t("notice.publisher.body")}</p>
         <p>{t("notice.publisher.director", { alias: PUBLISHER_ALIAS })}</p>
-        <p>{t("notice.publisher.contact", { email: CONTACT_EMAIL })}</p>
+        <p>
+          {t.rich("notice.publisher.contact", {
+            email: CONTACT_EMAIL,
+            mail: mailTo(CONTACT_EMAIL),
+          })}
+        </p>
       </Section>
 
       <Section heading={t("notice.host.heading")}>
         {/* The statute names the host's telephone number, so it is used when
             there is one. Literal keys either side of the branch. */}
         <p>
-          {HOST.phone
-            ? t("notice.host.body", {
+          {phone
+            ? t.rich("notice.host.body", {
                 host: HOST.name,
                 address: HOST.address,
-                phone: HOST.phone,
+                phone,
                 url: HOST.url,
+                tel: telTo(phone),
+                link: linkTo(httpsUrl(HOST.url)),
               })
-            : t("notice.host.bodyNoPhone", {
+            : t.rich("notice.host.bodyNoPhone", {
                 host: HOST.name,
                 address: HOST.address,
                 url: HOST.url,
+                link: linkTo(httpsUrl(HOST.url)),
               })}
         </p>
         {/* Useful whether or not there is a phone number, so it is not tied to
             the branch above. */}
-        {HOST.email && <p>{t("notice.host.contact", { email: HOST.email })}</p>}
+        {hostEmail && (
+          <p>
+            {t.rich("notice.host.contact", {
+              email: hostEmail,
+              mail: mailTo(hostEmail),
+            })}
+          </p>
+        )}
         <p>{t("notice.host.noServer")}</p>
       </Section>
 
       <Section heading={t("notice.ip.heading")}>
-        <p>{t("notice.ip.body", { repo: SOURCE_REPO })}</p>
+        <p>
+          {t.rich("notice.ip.body", {
+            repo: SOURCE_REPO,
+            licence: linkTo(LICENCE_URL),
+            link: linkTo(httpsUrl(SOURCE_REPO)),
+          })}
+        </p>
         <p>{t("notice.ip.data")}</p>
         <p>{t("notice.ip.valve")}</p>
       </Section>
 
       <Section heading={t("notice.data.heading")}>
         <p>
-          {t("notice.data.body", {
-            source: DATA_SOURCE,
+          {t.rich("notice.data.body", {
+            source: DATA_SOURCE.name,
             email: CONTACT_EMAIL,
+            link: linkTo(DATA_SOURCE.url),
+            mail: mailTo(CONTACT_EMAIL),
+            privacy: pageTo("/privacy"),
           })}
         </p>
       </Section>

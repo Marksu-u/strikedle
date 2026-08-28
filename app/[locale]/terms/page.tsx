@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LegalPage, { Section } from "@/components/legal/LegalPage";
+import { pageTo } from "@/components/links";
 import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -25,6 +26,12 @@ export default async function TermsPage({
     <LegalPage title={t("terms.title")}>
       <Section heading={t("terms.purpose.heading")}>
         <p>{t("terms.purpose.body")}</p>
+        <p>
+          {t.rich("terms.purpose.related", {
+            notice: pageTo("/legal"),
+            privacy: pageTo("/privacy"),
+          })}
+        </p>
       </Section>
 
       <Section heading={t("terms.access.heading")}>

@@ -16,6 +16,10 @@ export const LAST_UPDATED = new Date("2026-08-17T00:00:00Z");
 
 export const CONTACT_EMAIL = "support@strikedle.com";
 
+// The constants below print a bare domain — "vercel.com" reads better than
+// "https://vercel.com/" inside a sentence — so the href is rebuilt from it.
+export const httpsUrl = (domain: string) => `https://${domain}`;
+
 // The host's identity
 export const HOST: {
   name: string;
@@ -23,26 +27,30 @@ export const HOST: {
   phone: string | null;
   email: string | null;
   url: string;
+  privacyUrl: string;
 } = {
   name: "Vercel Inc.",
   address: "440 N Barranca Avenue #4133 Covina, CA 91723 United States",
   phone: null,
   email: "privacy@vercel.com",
   url: "vercel.com",
+  privacyUrl: "https://vercel.com/legal/privacy-policy",
 };
 
-// Where the player data came from. Waiting on a better/automated way to update data.
-export const DATA_SOURCE = "https://www.hltv.org/";
+// Where the player data came from. Waiting on a better/automated way to update
+// data. Two fields because the pages print the name and link the address.
+export const DATA_SOURCE = {
+  name: "HLTV.org",
+  url: "https://www.hltv.org/",
+};
 
-// The pool is refreshed by hand, so how current it is is a fact about the site
-// and belongs here with the rest. `meta.json` is generated from the center's
-// `updated` field — see scripts/generate.ts — and holds nothing else, so the
-// footer gets the date without the 100 kB of players behind it.
-// Read as UTC, and rendered as UTC, so the day never slips by a timezone.
 export const DATA_UPDATED = new Date(`${dataMeta.updated}T00:00:00Z`);
 
-// Public source repository
+// Public source repository, and the licence file the legal notice points at.
 export const SOURCE_REPO = "github.com/Marksu-u/strikedle";
+export const LICENCE_URL = `${httpsUrl(SOURCE_REPO)}/blob/main/LICENSE`;
+
+export const CNIL_URL = "https://www.cnil.fr/";
 
 export const X_HANDLE = "marksu_u";
 export const X_URL = `https://x.com/${X_HANDLE}`;

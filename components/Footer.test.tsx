@@ -25,8 +25,6 @@ describe("Footer", () => {
     unmount();
   });
 
-  // LCEN requires the notice to be reachable from every page, so losing a link
-  // here is a compliance bug, not a cosmetic one.
   it.each([
     ["en", en],
     ["fr", fr],
@@ -45,11 +43,6 @@ describe("Footer", () => {
     unmount();
   });
 
-  // The pool is refreshed by hand, so a player has no other way to tell whether
-  // a missing transfer is a bug or just an old scrape. Expected date is derived
-  // from `meta.json` rather than written out, so the next refresh moves the date
-  // without failing the test; both locales, because a line that renders only in
-  // English is the same silence for half the readers.
   it.each([
     ["en", en],
     ["fr", fr],
@@ -66,11 +59,39 @@ describe("Footer", () => {
       messages as object,
     );
     expect(container.textContent).toContain(expected);
-    // The ISO form reads as a database field, and would also mean the date
-    // slipped past the formatter untranslated.
     expect(container.textContent).not.toContain(meta.updated);
     unmount();
   });
+
+  it("leaves the site without a referrer, and keeps the rel-me claim", () => {
+    const { container, unmount } = renderIn("en", en);
+    const external = [...container.querySelectorAll("a")].find((a) =>
+      a.getAttribute("href")?.startsWith("https://x.com/"),
+    );
+    expect(external).toBeDefined();
+    expect(external).toHaveAttribute("target", "_blank");
+    const rel = external?.getAttribute("rel") ?? "";
+    expect(rel.split(" ").sort()).toEqual(["me", "noopener", "noreferrer"]);
+    unmount();
+  });
+
+  it.each([
+    ["en", en],
+    ["fr", fr],
+  ])(
+    "offers a way to report a mistake in the data (%s)",
+    (locale, messages) => {
+      const { container, unmount } = renderIn(
+        locale as string,
+        messages as object,
+      );
+      const hrefs = [...container.querySelectorAll("a")].map((a) =>
+        a.getAttribute("href"),
+      );
+      expect(hrefs).toContain("mailto:support@strikedle.com");
+      unmount();
+    },
+  );
 
   it("names Valve so the fan-project disclaimer is on every page", () => {
     const { container, unmount } = renderIn("en", en);

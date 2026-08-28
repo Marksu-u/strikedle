@@ -178,24 +178,24 @@
         "heading": "Publisher",
         "body": "This site is published by an individual, on a personal and non-commercial basis. The publisher's details have been provided to the host, in accordance with article 6-III-2 of the French LCEN.",
         "director": "Publication director: {alias}.",
-        "contact": "The publisher can be reached at {email}."
+        "contact": "The publisher can be reached at <mail>{email}</mail>."
       },
       "host": {
         "heading": "Hosting",
-        "body": "The site is hosted by {host}, {address}, telephone {phone} ({url}).",
-        "bodyNoPhone": "The site is hosted by {host}, {address} ({url}).",
-        "contact": "The host can be contacted at {email}.",
+        "body": "The site is hosted by {host}, {address}, telephone <tel>{phone}</tel> (<link>{url}</link>).",
+        "bodyNoPhone": "The site is hosted by {host}, {address} (<link>{url}</link>).",
+        "contact": "The host can be contacted at <mail>{email}</mail>.",
         "noServer": "The site has no database and no user accounts. Nothing you do here is stored on a server: your progress stays in your own browser."
       },
       "ip": {
         "heading": "Intellectual property",
-        "body": "The source code of this site is public and released under the MIT licence: {repo}. You are free to reuse, modify and redistribute it, keeping the copyright notice.",
+        "body": "The source code of this site is public and released under the <licence>MIT licence</licence>: <link>{repo}</link>. You are free to reuse, modify and redistribute it, keeping the copyright notice.",
         "data": "The licence covers the code only. The player datasets are factual competitive results, not original work of the publisher, who therefore makes no grant over them; anyone reusing them answers for their own position under copyright, the EU database right and data protection law.",
         "valve": "Counter-Strike, Counter-Strike 2 and the associated marks are the property of Valve Corporation. This site is an independent fan project, with no affiliation to, endorsement by or sponsorship from Valve. No game asset is reproduced here."
       },
       "data": {
         "heading": "Player data",
-        "body": "The competitive statistics used by the games come from publicly reported results, chiefly {source}. Any player wishing to correct or object to the use of data concerning them can write to {email}; see the privacy policy for details."
+        "body": "The competitive statistics used by the games come from publicly reported results, chiefly <link>{source}</link>. Any player wishing to correct or object to the use of data concerning them can write to <mail>{email}</mail>; see the <privacy>privacy policy</privacy> for details."
       },
       "links": {
         "heading": "External links",
@@ -214,23 +214,25 @@
         "intro": "Two items, both strictly necessary to the service you asked for. Neither ever leaves your browser.",
         "progress": "strikedle:v1 (local storage) — your streak, your score, your record and today's puzzle progress. Without it, refreshing the page would lose the puzzle you are in the middle of.",
         "locale": "NEXT_LOCALE (cookie) — remembers whether you chose English or French, so you are not sent back to the wrong language on your next visit.",
-        "erase": "Clearing your browser's site data erases both. Your streak and record go with them, and cannot be recovered: there is no copy anywhere else."
+        "erase": "Clearing your browser's site data erases both. Your streak and record go with them, and cannot be recovered: there is no copy anywhere else.",
+        "cookies": "The <cookies>cookie policy</cookies> lists the same two items, with how long each is kept."
       },
       "host": {
         "heading": "Data processed by the host",
-        "body": "Like any website, this one is served by a host, {host}, whose servers log technical connection data including IP addresses. That processing rests on the legitimate interest of keeping the service running and secure. The publisher does not exploit those logs."
+        "body": "Like any website, this one is served by a host, {host}, whose servers log technical connection data including IP addresses. That processing rests on the legitimate interest of keeping the service running and secure. The publisher does not exploit those logs.",
+        "policy": "How the host handles those logs is set out in its own <link>privacy policy</link>."
       },
       "players": {
         "heading": "Data about professional players",
         "intro": "The games are built on data describing {count} real people — professional Counter-Strike players. This is the only personal data the site processes about identified individuals.",
         "fields": "For each player, depending on the game: nickname, nationality, current and former teams, role, age, number of Majors and tournaments won, career prize money and notable achievements.",
-        "basis": "Lawful basis: legitimate interest (article 6.1.f GDPR) in running a free, informational game about a public competitive scene. The data concerns professional activity carried out in public, comes from results published by the scene itself, chiefly {source}, and includes nothing about private life.",
-        "rights": "Any player concerned may request access, correction, or object to the use of data concerning them, by writing to {email}. Requests are handled promptly and free of charge; a correction usually means editing one line of a data file."
+        "basis": "Lawful basis: legitimate interest (article 6.1.f GDPR) in running a free, informational game about a public competitive scene. The data concerns professional activity carried out in public, comes from results published by the scene itself, chiefly <link>{source}</link>, and includes nothing about private life.",
+        "rights": "Any player concerned may request access, correction, or object to the use of data concerning them, by writing to <mail>{email}</mail>. Requests are handled promptly and free of charge; a correction usually means editing one line of a data file."
       },
       "rights": {
         "heading": "Your rights",
         "body": "Because the site holds no account and no server-side record, there is nothing about you to access, export or delete on request — the data is on your own device, under your control, and you can erase it at any time from your browser settings.",
-        "cnil": "For anything concerning the host's logs or the player data, write to {email}. You also have the right to lodge a complaint with the CNIL (cnil.fr)."
+        "cnil": "For anything concerning the host's logs or the player data, write to <mail>{email}</mail>. You also have the right to lodge a complaint with the CNIL (<cnil>cnil.fr</cnil>)."
       },
       "changes": {
         "heading": "Changes",
@@ -241,7 +243,8 @@
       "title": "Terms of use",
       "purpose": {
         "heading": "Purpose",
-        "body": "These terms govern the use of this site: three free Counter-Strike puzzle games with nine daily puzzles, identical for everyone, rotating at 03:00 UTC. Using the site implies accepting them."
+        "body": "These terms govern the use of this site: three free Counter-Strike puzzle games with nine daily puzzles, identical for everyone, rotating at 03:00 UTC. Using the site implies accepting them.",
+        "related": "The publisher's details are set out in the <notice>legal notice</notice>, and the handling of data in the <privacy>privacy policy</privacy>."
       },
       "access": {
         "heading": "Access",
@@ -268,7 +271,8 @@
       "title": "Cookie policy",
       "what": {
         "heading": "What this page covers",
-        "body": "This page lists everything the site writes to your browser, whether it is a cookie or another storage mechanism such as local storage. Both are covered by the same rule, article 82 of the French Data Protection Act."
+        "body": "This page lists everything the site writes to your browser, whether it is a cookie or another storage mechanism such as local storage. Both are covered by the same rule, article 82 of the French Data Protection Act.",
+        "privacy": "What the site does with them, and what it deliberately does not do, is set out in the <privacy>privacy policy</privacy>."
       },
       "necessary": {
         "heading": "Strictly necessary items",
